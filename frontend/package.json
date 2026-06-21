@@ -5,12 +5,8 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
-<<<<<<< HEAD
     "start": "next start",
     "analyze": "ANALYZE=true next build"
-=======
-    "start": "next start"
->>>>>>> 168c432 (fix vercel crash)
   },
   "dependencies": {
     "next": "^15.0.0",
@@ -23,14 +19,10 @@
     "typescript": "^5.0.0",
     "@types/node": "^20.0.0",
     "@types/react": "^19.0.0",
-<<<<<<< HEAD
     "@next/bundle-analyzer": "^15.0.0",
-    "tailwindcss": "^4.0.0"
-=======
     "tailwindcss": "^4.0.0"
   },
   "engines": {
     "node": "20.x"
->>>>>>> 168c432 (fix vercel crash)
   }
 }
