@@ -220,7 +220,7 @@ export default function JustUs() {
       </header>
 
       <div className="flex flex-1 overflow-hidden">
-        <nav className="w-48 flex-shrink-0 border-r border-white/5 p-4 flex flex-col gap-1">
+        <nav className="w-48 shrink-0 border-r border-white/5 p-4 flex flex-col gap-1">
           {MODULES.map(m => (
             <button key={m.id} onClick={() => setMod(m.id)}
               className={`p-3 text-left text-xs font-bold uppercase rounded-xl transition-colors ${

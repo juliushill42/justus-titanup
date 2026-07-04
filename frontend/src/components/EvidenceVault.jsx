@@ -151,7 +151,7 @@ export default function EvidenceVault({ api }) {
             <div key={e.id} className="bg-white/[0.02] border border-white/5 rounded-2xl p-5 flex flex-col gap-3">
               <div className="flex items-start justify-between gap-2">
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-400 flex-shrink-0" />
+                  <CheckCircle className="w-4 h-4 text-green-400 shrink-0" />
                   <span className="text-sm font-bold text-white truncate max-w-xs">{e.filename}</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -163,7 +163,7 @@ export default function EvidenceVault({ api }) {
               </div>
 
               <div className="flex items-center gap-2 text-[10px] font-mono text-teal-300 bg-black/30 rounded-xl px-3 py-2 overflow-x-auto">
-                <Hash className="w-3 h-3 flex-shrink-0 text-teal-500" />
+                <Hash className="w-3 h-3 shrink-0 text-teal-500" />
                 {e.sha256}
               </div>
 

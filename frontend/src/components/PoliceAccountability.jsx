@@ -225,7 +225,7 @@ export default function PoliceAccountability({ api }) {
               ].map(({ key, label }) => (
                 <label key={key} className="flex items-center gap-2 cursor-pointer group">
                   <div onClick={() => set(key, !form[key])}
-                    className={`w-4 h-4 rounded border flex-shrink-0 flex items-center justify-center transition-colors ${
+                    className={`w-4 h-4 rounded border shrink-0 flex items-center justify-center transition-colors ${
                       form[key] ? "bg-teal-500 border-teal-500" : "border-white/20 group-hover:border-white/40"
                     }`}>
                     {form[key] && <CheckCircle className="w-3 h-3 text-black" />}
@@ -291,7 +291,7 @@ export default function PoliceAccountability({ api }) {
                   <p className="text-[10px] font-bold uppercase text-white/30 tracking-wide">Assessment Flags</p>
                   {result.flags.map((f, i) => (
                     <div key={i} className="flex items-start gap-2 bg-white/[0.02] border border-white/5 rounded-xl px-4 py-2.5">
-                      <FileWarning className="w-3.5 h-3.5 text-yellow-400 flex-shrink-0 mt-0.5" />
+                      <FileWarning className="w-3.5 h-3.5 text-yellow-400 shrink-0 mt-0.5" />
                       <span className="text-xs text-white/60">{f}</span>
                     </div>
                   ))}
@@ -304,7 +304,7 @@ export default function PoliceAccountability({ api }) {
                   <p className="text-[10px] font-bold uppercase text-white/30 tracking-wide">Recommended Actions</p>
                   {result.actions.map((a, i) => (
                     <div key={i} className="flex items-start gap-2 bg-teal-500/5 border border-teal-500/10 rounded-xl px-4 py-2.5">
-                      <AlertTriangle className="w-3.5 h-3.5 text-teal-400 flex-shrink-0 mt-0.5" />
+                      <AlertTriangle className="w-3.5 h-3.5 text-teal-400 shrink-0 mt-0.5" />
                       <span className="text-xs text-white/70">{a}</span>
                     </div>
                   ))}
