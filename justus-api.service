@@ -1,0 +1,12 @@
+[Unit]
+Description=JustUs API
+After=network.target
+
+[Service]
+WorkingDirectory=/home/juliushill/justus-titanup
+ExecStart=/bin/bash /home/juliushill/justus-titanup/start.sh
+Restart=always
+User=juliushill
+
+[Install]
+WantedBy=multi-user.target
